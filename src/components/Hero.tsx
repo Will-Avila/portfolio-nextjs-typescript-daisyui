@@ -53,7 +53,7 @@ export default function Hero() {
                                     size={32}
                                 />
                             </Link>
-                            <Link className="tooltip tooltip-info" href="https://api.whatsapp.com/send?phone=58999159652" target="_blank" data-tip="Falar no Whatsapp">
+                            <Link className="tooltip tooltip-info" href="https://api.whatsapp.com/send?phone=85999159652" target="_blank" data-tip="Falar no Whatsapp">
                                 <FaWhatsapp
                                     className="border-2 p-1 rounded-md fill-accent border-accent"
                                     size={32}

@@ -16,7 +16,7 @@ export default function Footer() {
                             size={24}
                         />
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=58999159652" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=85999159652" target="_blank">
                         <FaWhatsapp
                             size={24}
                         />

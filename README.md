@@ -65,7 +65,8 @@ Este projeto é uma landing page de portfólio desenvolvida com Next.js, utiliza
 ```
 portfolio/
 │
-├── components/          # Componentes reutilizáveis
+├── src/app              # Arquivos do projeto
+├── src/components/      # Componentes reutilizáveis
 ├── styles/              # Estilos globais
 ├── public/              # Recursos estáticos
 └── README.md            # Documentação do projeto
