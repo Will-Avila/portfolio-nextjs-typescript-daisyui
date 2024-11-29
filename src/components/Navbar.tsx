@@ -3,7 +3,7 @@
 import Link from "next/link";
 import menu from "@/data/menu";
 import Logo from "./Logo";
-import { FaBars, FaRegWindowClose } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 export default function Navbar() {
     function closeDrawer() {
