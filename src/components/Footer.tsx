@@ -16,15 +16,19 @@ export default function Footer() {
                             size={24}
                         />
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=85999159652" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=5585999159652" target="_blank">
                         <FaWhatsapp
                             size={24}
                         />
                     </a>
                 </div>
             </span>
-            <div className="flex justify-between items-center px-8 pb-4">
-                <Logo />
+            <div className="flex justify-between items-center px-5 pb-4">
+                <Logo
+                    sizeIcon={24}
+                    sizeText="text-md"
+                    sizeTextMd="md:text-lg"
+                />
                 <span className="text-end text-sm">&copy; Will Avila {new Date().getFullYear()}</span>
             </div>
         </footer>

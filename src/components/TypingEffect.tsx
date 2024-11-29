@@ -33,7 +33,7 @@ export default function TypingEffect({ text, speed, delay }: Props) {
     }, [index, isTyping, displayedText, text, speed]);
 
     return (
-        <span>{displayedText}</span>
+        <div>{displayedText}</div>
     );
 };
 

@@ -9,8 +9,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Will Avila - Desenvolvedor Web com expertise em tecnologias modernas, criando soluções digitais inovadoras e responsivas"
+  title: "Will Avila | Desenvolvedor Web | Portfólio | Fortaleza-Ce",
+  description: "Portfólio Will Avila - Desenvolvedor Web com habilidades em tecnologias modernas, criando soluções digitais inovadoras e responsivas"
 };
 
 export default function RootLayout({

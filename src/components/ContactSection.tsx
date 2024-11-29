@@ -21,7 +21,7 @@ export default function ContactSection() {
         >
         </BtnContact>
         <BtnContact
-          url="https://api.whatsapp.com/send?phone=85999159652"
+          url="https://api.whatsapp.com/send?phone=5585999159652"
           icon={<FaPhone size={24} />}
           text="(85)99915-9652"
           initial={{ opacity: 0, x: -200 }}

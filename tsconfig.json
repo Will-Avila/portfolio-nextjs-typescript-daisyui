@@ -34,7 +34,7 @@
     ".next_bkp/types/**/*.ts",
     "next-env.d.ts",
     ".next/types/**/*.ts"
-  ],
+, "src/components/Particles.js"  ],
   "exclude": [
     "node_modules"
   ]

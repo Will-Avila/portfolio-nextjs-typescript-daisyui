@@ -17,10 +17,10 @@ export default function AboutSection() {
                     <div className="divider divider-accent max-w-96 mx-auto">
                         <Title title="Sobre Mim" />
                     </div>
-                    <div className="pt-4 text-lg text-center">
-                        <p><strong>Desenvolvedor Web</strong> com experiência em React.js, Next.js, JavaScript, TypeScript, Tailwind CSS, Bibliotecas UI, Wordpress com Elementor e consumo de APIs REST.</p>
-                        <p>Apaixonado por desenvolver <strong>componentes reutilizáveis e eficientes.</strong></p>
-                        <p><strong>Formado em Sistemas para Internet</strong> na Unicesumar e atualmente cursando desenvolvimento Full-Stack na B7Web.</p>
+                    <div className=" flex flex-col gap-2 pt-4 text-lg text-left max-w-2xl mx-auto">
+                        <p>- <strong>Desenvolvedor Web</strong> com conhecimentos em HTML, CSS, Javascript, SQL e NoSQL. Tenho mais habilidades em desenvolvimento front-end, uso de bibliotecas, frameworks, e consumo de APIs REST.</p>
+                        <p>- Apaixonado por desenvolver <strong>componentes reutilizáveis e eficientes.</strong></p>
+                        <p>- <strong>Graduado em Sistemas para Internet</strong> na Unicesumar e atualmente cursando desenvolvimento Full-Stack na B7Web.</p>
                     </div>
                 </motion.div>
                 <motion.div className="mt-16"

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { FaCode, FaGlobeAmericas } from "react-icons/fa"
 
 interface PortfolioCardProps {
@@ -29,17 +30,17 @@ export default function PortfolioCard({ title, technologies, urlImage, alt, urlP
                     ))}
                 </div>
                 <div className="flex justify-center gap-4 pt-4">
-                    <a className="btn btn-outline tooltip tooltip-info flex" href={urlProject} data-tip="Acessar projeto online" target="_blank">
+                    <Link className="btn btn-outline tooltip tooltip-info flex" href={urlProject} data-tip="Acessar projeto online" target="_blank">
                         <FaGlobeAmericas
                             size={32}
                         />
-                    </a>
+                    </Link>
                     {urlGithub && (
-                        <a className="btn btn-outline tooltip tooltip-info flex" href={urlGithub} data-tip="Ver projeto no github" target="_blank">
+                        <Link className="btn btn-outline tooltip tooltip-info flex" href={urlGithub} data-tip="Ver projeto no github" target="_blank">
                             <FaCode
                                 size={32}
                             />
-                        </a>
+                        </Link>
                     )}
 
                 </div>
