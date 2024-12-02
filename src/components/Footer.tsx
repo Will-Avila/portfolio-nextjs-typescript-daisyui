@@ -1,3 +1,5 @@
+"use client"
+
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Logo from "./Logo";
 

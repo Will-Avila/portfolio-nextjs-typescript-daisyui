@@ -13,7 +13,7 @@ export default function BtnContact({ icon, text, url, ...props }: BtnContactProp
         <motion.a href={url} className="btn shadow-lg bg-primary gap-4" target="_blank"
             {...props}
         >
-            <span>{icon}</span><span className="text-accent text-lg font-light">{text}</span>
+            <span>{icon}</span><span className="text-accent text-base">{text}</span>
         </motion.a>
     )
 }

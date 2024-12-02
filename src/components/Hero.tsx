@@ -10,8 +10,8 @@ export default function Hero() {
     return (
         <div className="hero">
             <div className="container flex flex-col items-center justify-between lg:flex-row md:gap-8">
-                <div className="text-center md:text-left my-8">
-                    <h1 className="text-4xl md:text-5xl font-bold text-center sm:text-left font-serif">
+                <div className="text-center md:text-left my-8 drop-shadow-md">
+                    <h1 className="text-4xl md:text-5xl font-bold text-center sm:text-left">
                         <span>
                             <TypingEffect
                                 text="Olá,"
@@ -26,7 +26,7 @@ export default function Hero() {
                             />
                         </span>
                     </h1>
-                    <h2 className="my-4 pb-2 text-center sm:text-left text-lg font-serif">
+                    <h2 className="my-4 pb-2 text-center sm:text-left text-lg font-semibold">
                         <TypingEffect
                             text="Desenvolvedor Web"
                             speed={100}
@@ -34,7 +34,7 @@ export default function Hero() {
                         />
                     </h2>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:justify-between">
-                        <Link href="/will-avila-cv.pdf" target="_blank" title="Download Curriculum Vitae"
+                        <Link href="/Curriculo-Will-Avila.pdf" target="_blank" title="Download Curriculum Vitae"
                             className="btn btn-outline btn-accent border-2 text-lg"
                         >
                             <FaCloudDownloadAlt

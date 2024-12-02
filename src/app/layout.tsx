@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
-import ScrollTop from "@/components/ScrollTop";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,10 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" data-theme="mytheme" className="scroll-smooth">
+    <html lang="pt-BR" data-theme="dark" className="scroll-smooth">
       <body className={montserrat.className}>
         {children}
-        <ScrollTop />
       </body>
     </html>
   );

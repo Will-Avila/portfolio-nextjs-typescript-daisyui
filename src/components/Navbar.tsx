@@ -4,6 +4,7 @@ import Link from "next/link";
 import menu from "@/data/menu";
 import Logo from "./Logo";
 import { FaBars } from "react-icons/fa";
+import ThemeControler from "./ThemeControler";
 
 export default function Navbar() {
     function closeDrawer() {
@@ -23,7 +24,7 @@ export default function Navbar() {
                             <FaBars size={24} />
                         </label>
                     </div>
-                    <div className="flex-1 justify-end md:justify-start"><Logo /></div>
+                    <div className="flex-1 justify-between"><Logo /><ThemeControler /></div>
                     <div className="hidden flex-none md:block items-center">
                         <ul className="menu menu-horizontal">
                             {menu.map((item) => (

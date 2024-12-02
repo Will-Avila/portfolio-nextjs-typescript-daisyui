@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function AboutSection() {
     return (
         <section>
-            <div className="container mx-auto">
+            <div className="container mx-auto drop-shadow-md">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
