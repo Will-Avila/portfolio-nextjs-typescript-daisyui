@@ -1,21 +1,23 @@
-# Dockerfile (Node.js)
+# Use a imagem base do Node.js
 FROM node:22
 
-# Definir o diretório de trabalho
+# Define o diretório de trabalho dentro do container
 WORKDIR /usr/src/app
 
-# Copiar arquivos de dependência e instalá-las
+# Copia os arquivos de dependências
 COPY package*.json ./
+
+# Instala as dependências do projeto
 RUN npm install
 
-# Copiar o código da aplicação
+# Copia o restante do código para o container
 COPY . .
 
-# Construir a aplicação, se necessário
+# Executa o build da aplicação Next.js
 RUN npm run build
 
-# Expor a porta onde o Node.js roda (3000)
+# Expõe a porta 3000 para acesso à aplicação
 EXPOSE 3000
 
-# Comando para iniciar o servidor Node.js
+# Comando para iniciar a aplicação em modo de produção
 CMD ["npm", "start"]

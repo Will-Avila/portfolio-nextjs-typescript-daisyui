@@ -1,26 +1,4 @@
-# Ignorar arquivos e diretórios do sistema
 node_modules
 npm-debug.log
-yarn-error.log
-package-lock.json
-pnp.*
-.idea
-.vscode
-.DS_Store
 .env
 
-# Ignorar diretórios de build e cache
-build
-dist
-out
-.cache
-.next
-coverage
-
-# Ignorar arquivos de controle de versão
-.git
-.gitignore
-.gitattributes
-
-# Ignorar arquivos de configuração local
-docker-compose.override.yml
