@@ -31,7 +31,6 @@ const portfolioCards = [
     alt: "Landing Page - Promo da Maromba",
     urlProject:
       "https://lightgrey-mantis-706973.hostingersite.com/promo-da-maromba/",
-    //    urlGithub: "https://github.com/Will-Avila",
   },
 ];
 
