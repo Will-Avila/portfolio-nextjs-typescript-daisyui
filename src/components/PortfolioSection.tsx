@@ -9,7 +9,7 @@ export default function PortfolioSection() {
   return (
     <section id="portfolio" className="w-full bg-primary">
       <motion.div
-        className="container mx-auto"
+        className="container-xl mx-auto"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         exit={{ opacity: 0 }}

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import daisyui from "daisyui";
 
 export default {
   content: [
@@ -7,35 +8,22 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [daisyui],
   daisyui: {
     themes: [
       {
-        dark: {          
-          "primary": "#3d3e42",         
-          "secondary": "#31333b",         
-          "accent": "#eba54b",         
-          "neutral": "#D2D2D4",         
-          "base-100": "#31333b",         
-          "info": "#D2D2D4",         
-          "success": "#299e00",         
-          "warning": "#ffaa00",         
-          "error": "#ff5c69",
-          },
-        light: {          
-          "primary": "#797E91",         
-          "secondary": "#31333b",         
-          "accent": "#eba54b",         
-          "neutral": "#31333b",         
-          "base-100": "#FFFFFF",         
-          "info": "#FFFFFF",         
-          "success": "#299e00",         
-          "warning": "#ffaa00",         
-          "error": "#ff5c69",
-          },
+        dark: {
+          primary: "#3d3e42",
+          secondary: "#31333b",
+          accent: "#eba54b",
+          neutral: "#D2D2D4",
+          "base-100": "#31333b",
+          info: "#D2D2D4",
+          success: "#299e00",
+          warning: "#ffaa00",
+          error: "#ff5c69",
         },
-      ],
+      },
+    ],
   },
 } satisfies Config;
