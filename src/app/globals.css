@@ -11,7 +11,7 @@ section {
 }
 
 .title {
-  @apply text-3xl md:text-4xl font-bold text-center uppercase;
+  @apply text-2xl md:text-4xl font-bold text-center uppercase;
 }
 
 strong {

@@ -21,7 +21,7 @@ const portfolioCards = [
     technologies: ["Wordpress", "Elementor"],
     urlImage: "/images/portfolio/buscaeapreensao.webp",
     alt: "Landing Page Defesa Busca e Apreensao",
-    urlProject: "https://seagreen-crab-542450.hostingersite.com",
+    urlProject: "https://salmon-peafowl-521400.hostingersite.com/",
   },
   {
     id: 4,
@@ -31,6 +31,26 @@ const portfolioCards = [
     alt: "Landing Page - Promo da Maromba",
     urlProject:
       "https://lightgrey-mantis-706973.hostingersite.com/promo-da-maromba/",
+    urlGithub: "",
+  },
+  {
+    id: 5,
+    title: "Portfólio - Will Ávila",
+    technologies: ["Next", "Tailwind", "Typescript", "Framer Motion"],
+    urlImage: "/images/portfolio/portfolio.webp",
+    alt: "Portfólio - Will Avila",
+    urlProject:
+      "https://willavila.site",
+    urlGithub: "https://github.com/Will-Avila/portfolio-nextjs-typescript-daisyui",
+  },
+  {
+    id: 6,
+    title: "Landing Page - Psicóloga",
+    technologies: ["Next", "Tailwind", "Typescript", "Framer Motion"],
+    urlImage: "/images/portfolio/landing-page-psicologa.webp",
+    alt: "Landing Page - Psicóloga",
+    urlProject:
+      "https://psibrunnacristiny.com.br",
     urlGithub: "",
   },
 ];
