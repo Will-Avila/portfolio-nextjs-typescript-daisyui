@@ -55,9 +55,9 @@ const skillCards = [
     },
     {
         id: 10,
-        title: "MongoDB",
-        urlImage: "/images/technologies/mongodb.webp",
-        alt: "MongoDB",
+        title: "Docker",
+        urlImage: "/images/technologies/docker.webp",
+        alt: "Docker",
     },
     {
         id: 11,
