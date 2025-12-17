@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://www.willavila.com.br'
     const lastMod = '2024-12-17'

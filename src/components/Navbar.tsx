@@ -22,8 +22,8 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled
-          ? "glass-intense py-3 shadow-lg shadow-black/10"
-          : "bg-transparent py-5"
+        ? "glass-intense py-3 shadow-lg shadow-black/10"
+        : "bg-transparent py-5"
         }`}
     >
       <div className="container-xl mx-auto flex items-center justify-between">
@@ -145,7 +145,7 @@ export default function Navbar() {
                 <Link
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block btn btn-primary rounded-xl text-center"
+                  className="w-full flex items-center justify-center btn btn-primary rounded-xl"
                 >
                   Entrar em Contato
                 </Link>
