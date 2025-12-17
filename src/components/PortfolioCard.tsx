@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
-import { FaCode, FaGlobeAmericas } from "react-icons/fa";
+import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface PortfolioCardProps {
   title: string;
@@ -19,40 +22,74 @@ export default function PortfolioCard({
   urlGithub,
 }: PortfolioCardProps) {
   return (
-    <div className="card bg-base-100 w-full shadow-xl items-center text-center">
-      <figure>
-        <img src={urlImage} width={600} height={600} alt={alt} />
-      </figure>
-      <div className="card-body drop-shadow-md">
-        <h2 className="card-title justify-center mb-2 text-base">{title}</h2>
-        <div className="card-actions justify-center">
-          {technologies.map((technology, index) => (
-            <div key={index} className="badge badge-outline badge-accent">
-              {technology}
-            </div>
+    <motion.div
+      whileHover={{ y: -8 }}
+      className="group relative rounded-2xl overflow-hidden glass-card border border-white/5 hover:border-primary/30 transition-all duration-500"
+    >
+      {/* Shine Effect */}
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+      </div>
+
+      {/* Image Container */}
+      <div className="relative h-48 overflow-hidden">
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-base-100 via-base-100/50 to-transparent opacity-60 z-10 transition-opacity group-hover:opacity-80" />
+
+        {/* Corner Glow */}
+        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+
+        <img
+          src={urlImage}
+          alt={alt}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+      </div>
+
+      {/* Content */}
+      <div className="p-6 relative z-20">
+        {/* Title */}
+        <h3 className="text-xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
+          {title}
+        </h3>
+
+        {/* Technologies */}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {technologies.map((tech, index) => (
+            <span
+              key={index}
+              className="px-3 py-1.5 text-xs font-medium rounded-full bg-base-100/80 border border-white/10 text-neutral-content/70 group-hover:border-primary/20 group-hover:text-neutral-content/90 transition-all"
+            >
+              {tech}
+            </span>
           ))}
         </div>
-        <div className="flex justify-center gap-4 pt-4">
+
+        {/* Action Buttons */}
+        <div className="flex gap-3">
           <Link
-            className="btn btn-outline border-2 tooltip tooltip-accent flex"
             href={urlProject}
-            data-tip="Acessar projeto online"
             target="_blank"
+            className="flex-1 btn btn-sm btn-primary rounded-xl gap-2 shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-0.5 transition-all"
           >
-            <FaGlobeAmericas size={32} />
+            <FaExternalLinkAlt size={12} />
+            Demo
           </Link>
           {urlGithub && (
             <Link
-              className="btn btn-outline border-2 tooltip tooltip-accent flex"
               href={urlGithub}
-              data-tip="Ver projeto no github"
               target="_blank"
+              className="flex-1 btn btn-sm glass rounded-xl gap-2 border-white/10 hover:bg-white/10 hover:-translate-y-0.5 transition-all"
             >
-              <FaCode size={32} />
+              <FaCode size={14} />
+              Código
             </Link>
           )}
         </div>
       </div>
-    </div>
+
+      {/* Border Glow Effect */}
+      <div className="absolute inset-0 rounded-2xl border border-primary/0 group-hover:border-primary/30 transition-colors duration-500 pointer-events-none" />
+    </motion.div>
   );
 }
